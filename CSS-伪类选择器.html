@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪类选择器</title>
+    <style>
+        /* 未访问的链接 a:link 把未点击（访问）过的链接筛选出来 */
+        a:link {
+            color: #333;
+            text-decoration: none;
+        }
+        /* a:visited 选择点击（访问）过的链接 */
+        a:visited {
+            color: orange;
+        }
+        /* a:hover 选择鼠标经过的那个链接 */
+        a:hover {
+            color: skyblue;
+        }
+        /* a:active 选择鼠标正在按下还没有弹起鼠标的那个链接 */
+        a:active {
+            color: green;
+        }
+        /* 选取获得光标的表单元素 */
+        input:focus {
+            background-color: pink;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p><a href="https://baike.baidu.com/item/%E5%B0%8F%E7%8C%AA%E4%BD%A9%E5%A5%87/12343674?fr=aladdin">小猪佩奇</a></p>
+    <p><a href="http:baidu.com">百度一下</a></p>
+    <p><a href="http://www.jxufe.edu.cn/">江西财经大学</a></p>
+    <p><a href="http://www.ncu.edu.cn/">南昌大学</a></p>
+    <input type="text">
+    <input type="text">
+    <input type="text">
+</body>
+</html>

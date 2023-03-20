@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>字体系列</title>
+    <style>
+        h2 {
+            font-family: '微软雅黑';
+            /* 标题标签比较特殊，需要单独指定文字大小 */
+            font-size: 18px;
+            font-weight: 400;
+            /* 等价于 font-weight: normal;  让h2标题变细（不加粗）*/
+        }
+        p {
+            /* font-family: 'Microsoft Yahei',Arial, Helvetica, sans-serif; */
+            font-family: 'Times New Roman', Times, serif;
+            /* font-style: italic; 实际开发中很少将字体改为倾斜 */
+        }
+        em {
+            font-style: normal;
+        }
+        body {
+            font-size: 16px;
+        }
+        .bold {
+            /* font-weight: bold; */
+            font-weight: 700;
+            /* 700 后面没有单位   等价于bold  都是加粗的效果 */
+            /* 实际开发中更提倡使用数字表示加粗或者变细 */
+        }
+        div {
+            /* font-style: italic;
+            font-weight: 700;
+            font-size: 16px;
+            font-family: 'Microsoft Yahei'; */
+            /* font: font-style font-weight font-size/line-weight font-family; */
+            /* font: italic 700 16px 'Microsoft yahei'; */
+            font: 20px 'Microsoft yahei';
+        }
+    </style>
+</head>
+<body>
+    <h2>pink的秘密</h2>
+    <p>那一抹众人中最漂亮的颜色，</p>
+    <p>优雅，淡然，又那么心中清澈。</p>
+    <p>前段总是伴随着困难和犯错，</p>
+    <p>静心，坦然，攻克一个又一个。</p>
+    <p class="bold">拼死也要克服它，</p>
+    <p>这是pink的秘密也是老师最终的嘱托，</p>
+    <em>em标签将字体变倾斜，用font-size:normal; 让倾斜字体不倾斜</em>
+    <div>三生三世十里桃花，一心一意百行代码</div>
+</body>
+</html>
